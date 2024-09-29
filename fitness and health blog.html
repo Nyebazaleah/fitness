@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dona Fitness & Health Blog</title>
+    <style>
+        /* Global styles*/
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        body{
+            font-family:Arial,sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+        }
+        /*Header Styles*/
+        Header{
+background-color: #333;
+color:white;
+padding:20px 0;
+text-align:center;
+        }
+        headerh1{
+            font-size: 2.5rem;
+            margin: bottom 10px;
+        }
+        nav ul{
+            display:flex;
+            justify-content:center;
+            list-style: none;
+            margin-top: 0 15px;
+        }
+        nav ul li{
+            margin:0 15px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size:1.2rem;
+            transition:color 0.3s ease;
+
+        }
+        nav ul li a:hover{
+            color:#00cc66;
+        }
+        /*Hero Section*/
+        .hero{
+            background-image:url(istockphoto-1169712167-1024x1024.jpg);/*Replace with your image paath*/
+            background-size: cover;
+            background-position: center;
+            padding:100px 20px;
+            text-align:center;
+        }
+      .hero h2{
+        font-size:3rem;
+        margin-bottom:10px;
+      }  
+      .hero p{
+        font-size:1.5rem;
+      }
+      /*Content Sections */
+      .content-section{
+        padding:40px 20px;
+        background-color: white;
+        margin:20px 0;
+        border-radius: 8px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      }
+      .content-section h2{
+        text-align: center;
+        color:#333;
+        margin-bottom:30px;
+      }
+      .article{
+        margin-bottom:20px;
+
+      }
+.article h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+
+}
+.article p{
+    color:#555;
+    margin-bottom:10px;
+
+}
+.read-more{
+    color:#00cc66;
+    text-decoration: none;
+    font-weight:bold;
+
+}
+.read-more:hover{text-decoration: underline;}
+/*Footer Styles*/
+footer{
+    background-color: #333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+/*Responsive Styles*/
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+    }
+    .hero h2{
+        font-size: 2.5rem;
+    }
+    .hero p{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:480px){
+    header h1{
+        font-size: 2rem;
+    }
+    nav ul li{
+        margin: 0.5px;
+    }
+    .hero h2{
+        font-size:2rem;
+    }
+    .hero p{
+        font-size: 1rem;
+        
+    }
+}
+    </style>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <div class="logo">
+            <h1>Dona Fitness & Health</h1>
+            <p>Your guide to a healthier life</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <hi>
+                    <a href="#workouts">Workouts</a>
+                </hi>
+                <li>
+                    <a href="#health-tips">Health-Tips</a>
+                </li>
+                <li>
+                    <a href="#nutrition">Nutrition</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <!--Hero Section-->
+    <section class="hero" id="home">
+        <h2>welcome to Dona Fitness & Health</h2>
+        <p>Discover expert fitness routines, health tips, and nutrition advice for better living</p>
+        <a href="#workouts" class="cta-button">Start Your Journey</a>
+    </section>
+    <!--Workouts Section-->
+    <section id="workouts" class="content-section">
+        <h2>
+            Workouts Routines
+        </h2>
+        <div class="article">
+            <img src="istockphoto-1366052585-1024x1024.jpg" alt="Workout 1">
+            <h3>Full-Body Workouts</h3>
+            <p>
+                A complete workout to target every muscle in your body in just 30 minutes.
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="article">
+            <img src="istockphoto-1395337483-1024x1024.jpg" alt="Workout 2"> 
+            <h3>Cardio HIIT</h3>
+            <p>Burn fat and improve endurance withthis high-intensity interval training routine</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </section>
+    <!--Health Tips Section-->
+    <section id="health-tips" class="content-section">
+        <h2>Health Tips</h2>
+        <div class="article">
+            <img src="istockphoto-511305860-1024x1024.jpg" alt="Health Tip 1">
+            <h3>Improving sleep Quality</h3>
+            <p>Learn how to optimize your sleep to boost your overall
+                health and recovery.
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="article">
+            <img src="istockphoto-1208604845-1024x1024.jpg" alt="Health Tip 2">
+            <h3>Mental Wellness</h3>
+            <p>Simple mindfulness techniques to reduce stress and improve Mental
+                clarity
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </section>
+    <!--Nutritio  Section-->
+    <section id="nutrition" class="content-section">
+        <h2>Nutrition Advice</h2>
+        <div class="article">
+            <img src="istockphoto-1181461877-1024x1024.jpg" alt="Nutrition Tip 1">
+            <h3>Meal Prep for Busy Days</h3>
+            <p>
+                Plan and prepare your meals ahead of time to eat healthier and save time.
+            </p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+        <div class="article">
+            <img src="istockphoto-1488730480-1024x1024.jpg" alt="Nutrition Tip 2">
+            <h3>Post-Workout Nutrition</h3>
+            <p>Fuel your body with the right nutrients to maximize recovery after exercises</p>
+            <a href="#" clas="read-more">Read more</a>
+        </div>
+    </section>
+    <!--Footer Section-->
+    <footer>
+<p>&copy; 2024 Dona Fitness & Health Blog.
+    All rights reserved
+</p>
+    </footer>
+
+    
+    
+</body>
+</html>
